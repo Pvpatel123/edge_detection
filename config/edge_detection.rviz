@@ -1,0 +1,5 @@
+Visualization Manager:
+  - Fixed Frame: camera_link
+  - Displays:
+    - Image (Topic: `/edge_detection/edges`, Transport: raw)
+    - PointCloud2 (Topic: `/edge_detection/edge_points`)

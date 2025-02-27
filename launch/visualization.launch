@@ -1,0 +1,12 @@
+<launch>
+    <!-- Launch MIRA Picker with Robotiq Gripper -->
+    <include file="$(find mira_picker)/launch/display.launch">
+        <arg name="gripper_name" value="robotiq2f_140"/>
+        <arg name="publish_joint_state" value="true"/>
+        <arg name="publish_robot_state" value="true"/>
+    </include>
+
+    <!-- Launch Edge Detection -->
+    <include file="$(find edge_detection)/launch/edge_detection.launch" />
+
+</launch>
