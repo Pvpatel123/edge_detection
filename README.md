@@ -191,4 +191,4 @@ This extends ** Canny Edge Detection by:
 
 ## Possible Improvements
 1. We can integrate Sobel filter and Gaussian blur before applying Canny Edge Detection for simple Edge detection geometry as Sobel give more accurate detection but it is sensitive to noise .
-2. Their is a small delay between the 3D edge points and the camera image because of the slow processing of the PC. It can be imrovped by upgrading the processing capacity of the system.
+2. There is a small delay between the 3D edge points and the camera image because of the slow processing of the PC. It can be imrovped by upgrading the processing capacity of the system.
