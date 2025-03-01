@@ -52,6 +52,15 @@ Inside **catkin_workspace/src/edge_detecion/edge_detection/src/** you will find 
 
 ### Example
 
+![Image_5](https://github.com/user-attachments/assets/b63ccc33-60b2-4849-844f-df5537f9be25)
+
+![canny_edges_detected](https://github.com/user-attachments/assets/b13cf905-9c9c-4d8e-b7f5-d9e9573ba1cd)
+
+![Test_3](https://github.com/user-attachments/assets/47de904c-532b-41c6-be8c-96731abdb31f)
+
+![edges_detected](https://github.com/user-attachments/assets/8252a96c-4310-4963-a914-11810cfc07dc)
+
+
 ## ROS Edge Detecion Service and Client
 This provides a **ROS-based Edge Detection Service and Client** using the above mentioned **Canny Edge Detection Algorithm**. The service can process:
  - **A single image** and return the edge-detected result.
@@ -141,10 +150,6 @@ This provides a **ROS-based Edge Detection Service and Client** using the above 
     rosrun edge_detection edge_detection_client.py /path/to/directory or image
 
     ```
-### Examples
-
-
-
 ## ROS Edge Detection with 3D Projection and RViz Visualization
 
 This extends ** Canny Edge Detection by:
@@ -188,6 +193,8 @@ This extends ** Canny Edge Detection by:
 
 ### Example
 
+Projecting 3D edge point with the robot urdf. You can find the video below.
+https://drive.google.com/drive/folders/1TfaDgAuve6yCUeIKz93GmPsdPRUXwqEo?usp=drive_link
 
 ## Possible Improvements
 1. We can integrate Sobel filter and Gaussian blur before applying Canny Edge Detection for simple Edge detection geometry as Sobel give more accurate detection but it is sensitive to noise .
