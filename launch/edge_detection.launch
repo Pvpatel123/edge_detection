@@ -1,11 +1,27 @@
 <launch>
-    <!-- Argument for specifying the bag file -->
-    <arg name="bag_file" default="/catkin_workspace/edge_detection_data/withpointcloud.bag"/>
+    <!-- Set use_sim_time if playing from a bag file -->
+    <arg name="use_sim_time" default="true"/>
+    
+    <param name="/use_sim_time" value="$(arg use_sim_time)"/>
+    <param name="image_topic" value="/camera/rgb/image_raw"/>
+    <param name="edge_topic" value="/edge_detection/output"/>
 
-    <!-- Start ROS bag playback -->
-    <node pkg="rosbag" type="play" name="rosbag_play" args="$(arg bag_file) --clock"/>
+    <!-- Start Edge Detection Node -->
+    <node name="edge_detection_node" pkg="edge_detection" type="edge_detection_node.py" output="screen">
+        <param name="image_topic" value="/camera/rgb/image_raw"/>
+        <param name="edge_topic" value="/edge_detection/output"/>
+    </node>
 
-    <!-- Start the Edge Detection Node -->
-    <node pkg="edge_detection" type="edge_detection_node.py" name="edge_detection" output="screen"/>
+    <!-- Start RViz with custom configuration -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find edge_detection)/config/edge_detection.rviz" />
+
+      <!-- Edge to 3D Conversion Node -->
+    <node name="edge_to_3d_node" pkg="edge_detection" type="edge_to_3d_node.py" output="screen" />
+
+    
+    <node pkg="tf" type="static_transform_publisher" name="root_to_camera"
+        args="0 0 0 0 0 0 1 root_link camera_link 10"/>
+
+
 
 </launch>
