@@ -68,7 +68,7 @@ This provides a **ROS-based Edge Detection Service and Client** using the above 
 
 1. Install Dependencies
     ```
-v   sudo apt update
+    sudo apt update
     sudo apt install ros-noetic-cv-bridge ros-noetic-sensor-msgs
     pip install opencv-python numpy
     ```
