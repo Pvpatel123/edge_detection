@@ -1,0 +1,2 @@
+string original_image
+string processed_image
