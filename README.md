@@ -52,13 +52,13 @@ Inside **catkin_workspace/src/edge_detecion/edge_detection/src/** you will find 
 
 ### Example
 
-![Image_5](https://github.com/user-attachments/assets/b63ccc33-60b2-4849-844f-df5537f9be25)
-
-![canny_edges_detected](https://github.com/user-attachments/assets/b13cf905-9c9c-4d8e-b7f5-d9e9573ba1cd)
-
-![Test_3](https://github.com/user-attachments/assets/47de904c-532b-41c6-be8c-96731abdb31f)
-
-![edges_detected](https://github.com/user-attachments/assets/8252a96c-4310-4963-a914-11810cfc07dc)
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/b63ccc33-60b2-4849-844f-df5537f9be25" width="300" height="300" />
+    <img src="https://github.com/user-attachments/assets/b13cf905-9c9c-4d8e-b7f5-d9e9573ba1cd" width="300" height="300" />
+    <br>
+    <img src="https://github.com/user-attachments/assets/47de904c-532b-41c6-be8c-96731abdb31f" width="300" height="300" />
+    <img src="https://github.com/user-attachments/assets/8252a96c-4310-4963-a914-11810cfc07dc" width="300" height="300" />
+</p>
 
 
 ## ROS Edge Detecion Service and Client
